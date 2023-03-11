@@ -1,29 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f826dd-409a-4348-9e53-6f72d61e4d75" name="Changes" comment="" />
+    <list default="true" id="86f826dd-409a-4348-9e53-6f72d61e4d75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Readme/Readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readme/Readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Iterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/List.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2LR1dJ0ytWgHED63GEeTrcNqS3D" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/intellij/Parcial 1 - Tarea 5 - LinkedList",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Parcial 1 - Tarea 5 - LinkedList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,7 +82,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675819170282</updated>
+      <workItem from="1675819171796" duration="9143000" />
+      <workItem from="1676250358610" duration="10704000" />
+      <workItem from="1676560610644" duration="93000" />
+      <workItem from="1678497046212" duration="2250000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
