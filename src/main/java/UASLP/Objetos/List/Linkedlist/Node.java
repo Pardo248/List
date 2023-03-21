@@ -1,7 +1,7 @@
 package UASLP.Objetos.List.Linkedlist;
 
-class Node {
-    String data;
+class Node<T> {
+    T data;
     Node next;
     Node previous;
 

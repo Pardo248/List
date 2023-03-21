@@ -4,7 +4,7 @@ import UASLP.Objetos.List.Iterator;
 
 public class LinkedListIterator extends Object implements Iterator {
 
-    private Node currentNode;
+    private Node<String> currentNode;
 
     LinkedListIterator (Node head){
         currentNode = head;

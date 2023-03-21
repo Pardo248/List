@@ -3,11 +3,11 @@ package UASLP.Objetos.List.ArrayList;
 
 import UASLP.Objetos.List.Iterator;
 
-public class ArrayListIterator extends Object implements Iterator{
+public class ArrayListIterator<T> extends Object implements Iterator{
 
-    private String currentNode;
+    private T currentNode;
 
-    ArrayListIterator (String head){
+    ArrayListIterator (T head){
         currentNode = head;
     }
 
@@ -15,9 +15,9 @@ public class ArrayListIterator extends Object implements Iterator{
         return currentNode != null;
     }
 
-    public String next(){
+    public T next(){
 
-        String data = currentNode;
+        T data = currentNode;
 
         return data;
     }

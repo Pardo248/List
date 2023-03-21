@@ -2,17 +2,17 @@ package UASLP.Objetos.List.ArrayList;
 
 import UASLP.Objetos.List.List;
 
-public class ArrayList implements List {
+public abstract class ArrayList<T> implements List {
 
     private static final int INITIAL_SIZE = 2;
-    private String[] arr;
+    private T[] arr;
     private int size;
 
     public ArrayList(){
-        arr = new String[INITIAL_SIZE];
+        arr = (T[]) new Object[INITIAL_SIZE];//(T[]) new Object[arr.length*2];
     }
 
-    public void addAtTail (String data){
+    public void addAtTail (T data){
 
         if(size == arr.length){
             increaseSize();
@@ -28,7 +28,7 @@ public class ArrayList implements List {
     }
 
     private void increaseSize(){
-        String[] newArr = new String[arr.length*2];
+        T[] newArr = (T[]) new Object[arr.length*2];
 
         //System.arraycopy(arr, 0, newArr, 0, arr.length); copia de systema
         for (int i=0; i < arr.length; i++){
@@ -38,13 +38,13 @@ public class ArrayList implements List {
         arr = newArr;
     }
 
-    public void addAtFront(String data){
+    public void addAtFront(T data){
 
         if(size == arr.length){
             increaseSize();
         }
 
-        String[] temp = new String[arr.length];
+        T[] temp =(T[]) new Object[arr.length];
 
         for (int i=0; i < size; i++){
             temp[i+1]=arr[i];
@@ -71,14 +71,14 @@ public class ArrayList implements List {
         size = 0;
     }
 
-    public void setAt(int index,String data){
+    public void setAt(int index,T data){
 
         if(index < size) {
             arr[index] = data;
         }
     }
 
-    public String getAt (int index) {
+    public T getAt (int index) {
         if (index < size) {
             return arr[index];
         }else{

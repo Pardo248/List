@@ -4,8 +4,8 @@ import UASLP.Objetos.List.Iterator;
 import UASLP.Objetos.List.List;
 
 public class LinkedList implements List {
-    private Node head;
-    private Node tail;
+    private Node<String> head;
+    private Node<String> tail;
     private int size;
 
     public void addAtTail(String data){
@@ -98,7 +98,7 @@ public class LinkedList implements List {
         if(index <0 ||index >= size){
             return null;
         }
-        Node currentNode = head;
+        Node<String> currentNode = head;
 
         for (int currentIndex = 0; currentIndex < index ; currentIndex++){
             currentNode = currentNode.next;
