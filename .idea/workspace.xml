@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86f826dd-409a-4348-9e53-6f72d61e4d75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Readme/Readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readme/Readme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/ArrayList/ArrayListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/LinkedListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/Linkedlist/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UASLP/Objetos/List/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UASLP/Objetos/List/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcial 1 - Tarea 5 - LinkedList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Parcial 1 - Tarea 5 - LinkedList.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/ArrayList/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/ArrayList/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/ArrayList/ArrayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/ArrayList/ArrayListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/Linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/Linkedlist/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/Linkedlist/LinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/Linkedlist/LinkedListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/Linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/Linkedlist/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/exceptions/BadIndexException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/exceptions/BadIndexException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/exceptions/CollectionsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/exceptions/CollectionsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/exceptions/NotNullAllowedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UASLP/Objetos/List/exceptions/NotNullAllowedException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +39,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2LR1dJ0ytWgHED63GEeTrcNqS3D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,22 +54,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/intellij/Parcial 1 - Tarea 5 - LinkedList",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/intellij/Parcial 1 - Tarea 5 - LinkedList/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\intellij\Parcial 1 - Tarea 5 - LinkedList\src\main\java\Test" />
+      <recent name="E:\intellij\Parcial 1 - Tarea 5 - LinkedList\src\main\java" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -85,12 +101,29 @@
       <workItem from="1675819171796" duration="9143000" />
       <workItem from="1676250358610" duration="10704000" />
       <workItem from="1676560610644" duration="93000" />
-      <workItem from="1678497046212" duration="2250000" />
+      <workItem from="1678497046212" duration="3591000" />
+      <workItem from="1678720337900" duration="65000" />
+      <workItem from="1678845409658" duration="5383000" />
+      <workItem from="1679359055339" duration="1349000" />
+      <workItem from="1679361479400" duration="52000" />
+      <workItem from="1680225720778" duration="8083000" />
+      <workItem from="1680234678435" duration="2553000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

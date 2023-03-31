@@ -2,16 +2,21 @@ package UASLP.Objetos.List.Linkedlist;
 
 import UASLP.Objetos.List.Iterator;
 import UASLP.Objetos.List.List;
+import UASLP.Objetos.List.exceptions.BadIndexException;
+import UASLP.Objetos.List.exceptions.NotNullAllowedException;
 
-public class LinkedList implements List {
-    private Node<String> head;
-    private Node<String> tail;
-    private int size;
+public class LinkedList<T> implements List<T> {
+    private Node<T> head = null;
+    private Node<T> tail = null;
+    private Node<T> currentNode;
+    private int size = 0;
 
-    public void addAtTail(String data){
-        Node node = new Node();
+    public Node<T> getCurrentNode(){
+        return currentNode;
+    }
 
-        node.data = data;
+    public void addAtTail(T data){
+        Node<T> node = new Node<>(data);
         node.previous = tail;
 
         if( isEmpty() ){
@@ -23,119 +28,132 @@ public class LinkedList implements List {
         tail = node;
         size++;
     }
-    public void addAtFront(String data){
-        Node node = new Node();
+    public void addAtFront( T data) throws NotNullAllowedException{
 
-        node.data = data;
+        if(data == null){
+            throw new NotNullAllowedException();
+        }
+
+        Node<T> node = new Node<>(data);
+
         node.next = head;
 
         if(isEmpty()){
-            head = node;
             tail = node;
         }else{
-            node.next = node;
+            head.previous = node;
         }
-
+        head = node;
         size++;
     }
 
-    public void remove(int index){
-        Node temp=head;
+    public void remove(int index) throws BadIndexException {
 
-        int i = 0;
-
-        while(temp != null && i != index){
-            temp = temp.next;
-            i++;
+        if(isInvalidIndex(index)){
+            throw new BadIndexException();
         }
-
-        if(temp != null){
-            if(temp.next == null){
-                temp.previous.next = null;
-            }
-            else {
-                if(temp.previous!=null){
-                    temp.previous.next=temp.next;
-                }else{
-                    head=temp.next;
-                }
-            }
-
-            size--;
+        LinkedListIterator<T> iterator = (LinkedListIterator<T>) getIterator();
+        int currentIndex = 0;
+        while (iterator.hasNext() && currentIndex != index){
+            iterator.next();
+            currentIndex++;
         }
+        deleteNode(iterator.getCurrentNode());
+        size--;
     }
 
     public void removeAll(){
-        Node temp=head;
+        LinkedListIterator<T> iterator = (LinkedListIterator<T>) getIterator();
 
-        while(temp != null){
-            Node nextNode = temp.next;
-            temp.previous = null;
-            temp.next = null;
-            temp.data = null;
-            temp = nextNode;
+        while (iterator.hasNext()){
+            Node<T> T = iterator.getCurrentNode();
+            iterator.next();
+            deleteNode(T);
         }
-        head=null;
-        tail=null;
         size =0;
     }
 
-    public void setAt(int index,String data){
-        Node temp = head;
+    public void setAt(int index,T data){
+
+        if (isInvalidIndex(index)){
+            return;
+        }
+        LinkedListIterator<T> iterator = (LinkedListIterator<T>) getIterator();
         int i = 0;
 
-        while(temp != null && i != index){
-            temp = temp.next;
+        while(iterator.hasNext() && i != index){
+            iterator.next();
             i++;
         }
 
-        if(temp != null){
-            temp.data=data;
-        }
+        iterator.getCurrentNode().data = data;
     }
 
-    public String getAt (int index){
-        if(index <0 ||index >= size){
+    public T getAt (int index){
+        if(isInvalidIndex(index)){
             return null;
         }
-        Node<String> currentNode = head;
+        LinkedListIterator<T> iterator = (LinkedListIterator<T>) getIterator();
 
-        for (int currentIndex = 0; currentIndex < index ; currentIndex++){
-            currentNode = currentNode.next;
+        int i =0;
+
+        while(iterator.hasNext() && i != index){
+            iterator.next();
+            i++;
         }
-        return currentNode.data;
+        return iterator.next();
     }
 
-    public void removeAllWithValue(String data){
-        Node temp=head;
+    public void removeAllWithValue(T data){
+        LinkedListIterator<T> iterator = (LinkedListIterator<T>) getIterator();
 
-        while(temp != null && temp.data != data){
-            temp=temp.next;
+        while(iterator.hasNext()){
+            Node<T> temp = iterator.getCurrentNode();
+            if (temp.data.equals(data)){
+                deleteNode(temp);
+                size--;
+            }
+            iterator.next();
         }
 
-        if(temp != null){
-            if(temp.previous!=null){
-                temp.previous.next=temp.next;
-            }else{
-                head=temp.next;
-            }
-            if(temp.next!=null){
-                temp.next.previous=temp.previous;
-            }
-            size --;
-        }
     }
 
     public int getSize(){
         return size;
     }
 
-    public Iterator getIterator (){
-        return new LinkedListIterator(head);
+    public Iterator<T> getIterator (){
+        return new LinkedListIterator<>(head);
     }
 
     public boolean isEmpty() {
         return head == null || tail == null;
+    }
+
+    private void deleteNode(Node<T> node) {
+        if(node == null) {
+            return;
+        }
+        if(head == node && tail == node){
+            head = null;
+            tail = null;
+            return;
+        }
+        if(head == node) {
+            head = head.next;
+            head.previous = null;
+            return;
+        }
+        if(tail == node) {
+            tail = tail.previous;
+            tail.next = null;
+            return;
+        }
+        node.previous.next = node.next;
+        node.next.previous = node.previous;
+    }
+    private boolean isInvalidIndex(int index){
+        return index >= size || index < 0;
     }
 
 }

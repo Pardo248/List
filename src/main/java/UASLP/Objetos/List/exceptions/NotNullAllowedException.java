@@ -1,2 +1,4 @@
-package UASLP.Objetos.List.exceptions;public class NotNUllAllowedException {
+package UASLP.Objetos.List.exceptions;
+
+public class NotNullAllowedException extends CollectionsException{
 }

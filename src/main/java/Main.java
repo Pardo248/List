@@ -1,5 +1,3 @@
-package Test;
-
 import java.io.IOException;
 
 import UASLP.Objetos.List.Iterator;
