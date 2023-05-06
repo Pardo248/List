@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Parcial 1 - Tarea 5 - LinkedList" />
+        <module name="collections" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

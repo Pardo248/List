@@ -1,7 +1,11 @@
+Main.class
 UASLP\Objetos\List\List.class
 UASLP\Objetos\List\Iterator.class
 UASLP\Objetos\List\Linkedlist\LinkedListIterator.class
 UASLP\Objetos\List\ArrayList\ArrayListIterator.class
 UASLP\Objetos\List\ArrayList\ArrayList.class
+UASLP\Objetos\List\exceptions\CollectionsException.class
+UASLP\Objetos\List\exceptions\BadIndexException.class
+UASLP\Objetos\List\exceptions\NotNullAllowedException.class
 UASLP\Objetos\List\Linkedlist\LinkedList.class
 UASLP\Objetos\List\Linkedlist\Node.class
