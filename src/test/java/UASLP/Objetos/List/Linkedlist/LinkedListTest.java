@@ -174,105 +174,105 @@ public class LinkedListTest {
     }
     @Test
     public void givenListWithElements_CheckCurrentNode(){
-        //Inicializacion
+
         LinkedList<String> list=new LinkedList<>();
         list.addAtTail("10");
         list.addAtTail("11");
         list.addAtTail("12");
-        //Ejecucion
+
         Node nodito= list.getCurrentNode();
-        //Validacion
+
         Assertions.assertEquals(null,nodito);
         Assertions.assertFalse(list.isEmpty());
     }
     @Test
-    public void givenListWithElements_RemoveAll() throws BadIndexException,NotNullAllowedException{
-        //Inicializacion
+    public void givenListWithElements_RemoveAll(){
+
         LinkedList<String> list=new LinkedList<>();
         list.addAtTail("10");
         list.addAtTail("11");
         list.addAtTail("12");
-        //Ejecucion
+
         list.removeAll();
-        //Validacion
+
         Assertions.assertTrue(list.isEmpty());
     }
     @Test
-    public void givenListWithElements_SetIt() throws BadIndexException,NotNullAllowedException{
-        //Inicializacion
+    public void givenListWithElements_SetIt(){
+
         LinkedList<String> list=new LinkedList<>();
         list.addAtTail("10");
         list.addAtTail("11");
         list.addAtTail("12");
-        //Ejecucion
+
         list.setAt(2,"3");
-        //Validacion
+
         Assertions.assertEquals("3",list.getAt(2));
         Assertions.assertFalse(list.isEmpty());
     }
     @Test
-    public void givenListWithElements_GettinItAndSize() throws BadIndexException,NotNullAllowedException{
-        //Inicializacion
+    public void givenListWithElements_GettinItAndSize(){
+
         LinkedList<String> list=new LinkedList<>();
         list.addAtTail("10");
         list.addAtTail("11");
         list.addAtTail("12");
-        //Ejecucion
+
         String getting=list.getAt(2);
         int size=list.getSize();
-        //Validacion
+
         Assertions.assertEquals("12",getting);
         Assertions.assertEquals(3,size);
         Assertions.assertFalse(list.isEmpty());
     }
     @Test
-    public void givenListWithElements_RemoveAllWithValue() throws BadIndexException,NotNullAllowedException{
-        //Inicializacion
+    public void givenListWithElements_RemoveAllWithValue(){
+
         LinkedList<String> list=new LinkedList<>();
         list.addAtTail("10");
         list.addAtTail("11");
         list.addAtTail("12");
         list.addAtTail("11");
         list.addAtTail("11");
-        //Ejecucion
+
         list.removeAllWithValue("11");
         int size=list.getSize();
-        //Validacion
+
         Assertions.assertEquals(2,size);
         Assertions.assertFalse(list.isEmpty());
     }
     @Test
-    public void givenListWithElements_deletingNodes() throws BadIndexException,NotNullAllowedException{
-        //Inicializacion
+    public void givenListWithElements_deletingNodes() throws BadIndexException{
+
         LinkedList<String> list=new LinkedList<>();
         list.addAtTail("10");
         list.addAtTail("11");
         list.addAtTail("12");
         list.addAtTail(null);
-        //Ejecucion
+
         list.remove(0);
         list.remove(0);
         list.remove(0);
         list.remove(0);
         int size=list.getSize();
-        //Validacion
+
         Assertions.assertEquals(0,size);
         Assertions.assertTrue(list.isEmpty());
     }
     @Test
-    public void givenListWithElements_CheckIfHasPrevious() throws BadIndexException,NotNullAllowedException{
-        //Inicializacion
+    public void givenListWithElements_CheckIfHasPrevious() {
+
         LinkedList<String> list=new LinkedList<>();
         list.addAtTail("1");
         list.addAtTail("2");
         list.addAtTail("3");
         LinkedListIterator iterator= (LinkedListIterator) list.getIterator();
         list.addAtTail("4");
-        //Ejecucion
+
         boolean check1= iterator.hasPrevious();
         boolean check2= iterator.hasNext();
         String checkdata= (String) ((LinkedListIterator<String>) list.getIterator()).previous();
-        //Validacion
+
         Assertions.assertTrue(check1);
         Assertions.assertTrue(check2);
         Assertions.assertEquals(checkdata,"1");
